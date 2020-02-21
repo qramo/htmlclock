@@ -7,5 +7,12 @@
 <body>
 <H1>This is clock</H1>
 <div id="clock">00:00:00</div>
+<button id="goFS">Go fullscreen</button>
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
+</script>
 </body>
 </html>
